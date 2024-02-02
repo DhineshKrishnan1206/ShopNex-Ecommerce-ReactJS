@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap");
+body {
+  background: black;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+  font-family: "Nunito Sans", sans-serif;
+}
+#box {
+  width: fit-content;
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.17);
+  backdrop-filter: blur(25px);
+  border-bottom: solid 7px #0081c7;
+  border-radius: 7px;
+  color: whitesmoke;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#two {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.month {
+  background: #0081c7;
+  padding: 10px 0;
+  font-size: 22px;
+  
+}
+#day,
+#year {
+  font-size: 20px;
+}
+#date {
+    width:fit-content;
+  height: fit-content;
+  font-size: 120px;
+  font-weight: 700;
+  margin: -5px 0;
+}
+.balls {
+  position: absolute;
+  top: 58%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(330deg, orangered, orange, yellow);
+  border-radius: 50%;
+}
+.balls:nth-child(1) {
+  top: 48%;
+  left: 41%;
+  background: linear-gradient(120deg, purple, blue);
+}
+
+.about-page{
+    width:fit-content;
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.17);
+  backdrop-filter: blur(25px);
+  border-bottom: solid 7px #0081c7;
+  border-radius: 7px;
+  color: whitesmoke;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 25px; 
+}
+.container {
+    min-height: calc(100vh - 100px); /* Subtract the height of the footer from the viewport height */
+  padding-bottom: 100px; /* Add bottom padding to create space for the footer */
+  position: relative;
+}

@@ -1,0 +1,101 @@
+/* CSS for SignIn Component */
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1610713818311-4078be4c6936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80);
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh; /* Set a minimum height to ensure the content fills the viewport */
+  padding-bottom: 100px; /* Add bottom padding to create space for the footer */
+  position: relative;
+  z-index: 1; /* Ensure the container is above the video background */
+}
+
+.signIn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Add overflow: hidden to hide overflowing elements */
+  z-index: 1; /* Ensure the container is above the video background */
+}
+
+/* Video Background */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+/* Card */
+.card-container {
+  width: 400px;
+  height: auto;
+  background: #ffffff14;
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.062),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.069),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.069),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.065),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.061),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  padding: 2rem 2rem;
+  overflow: hidden;
+  border: 2px solid #ffffff0d;
+  position: relative; /* Add position relative to the card container */
+  z-index: 2; /* Set a higher z-index to ensure it's above the video background */
+}
+
+/* Error Alert */
+.alert_error {
+  margin-bottom: 16px;
+}
+
+/* Form */
+.signin-form {
+  margin-top: 16px;
+}
+
+/* Submit Button */
+.login_submit_btn {
+  width: 100%;
+}
+
+/* Help Text */
+.form_help_text {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* Username and Password Labels */
+.signin-form .ant-form-item-label label {
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Ensure the footer is above the video background */
+}
